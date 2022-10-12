@@ -1,0 +1,194 @@
+@font-face {
+    font-family: "3270 Regular";
+    src: url("../assets/font/3270-Regular.woff");
+}
+body {
+    font-family: "3270 Regular", monospace;
+    background-color: black;
+	font-size: 14pt;
+	font-weight: normal;
+}
+
+p {
+	color: white;
+}
+
+a {
+	text-decoration: inherit;
+	color: inherit;
+}
+
+.blue {
+	color: cyan;
+}
+
+.darkblue {
+	color: mediumblue;
+}
+
+.green {
+	color: limegreen;
+}
+
+.red {
+	color: tomato;
+}
+
+.white {
+	color: white;
+}
+
+#outer-frame {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+#subframe {
+	padding: 0;
+	margin: 0;
+
+	width: 120vh;
+	height: 100%;
+}
+
+#menu-bar {
+	display: flex;
+	color: white;
+}
+
+.menu-bar-item {
+	margin: 0.5em 0.5em 0.2em 0.5em;
+}
+
+#menu-bar-separator {
+    background-color: mediumblue;
+    height: 0.1em;
+    width: 100%;
+}
+
+#banner-text {
+}
+
+#menu-name-banner {
+	width: 100%;
+	position: relative;
+	color: mediumblue;
+	margin-top: 0.5em;
+	font-size: 14pt;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 0.1em;
+}
+
+#invalid-option {
+	position: absolute;
+	margin-top: calc(-14pt - 0.1em);
+	margin-bottom: 0.5em;
+	text-align: right;
+	color: gold;
+	width: 100%;
+	height: 100%;
+}
+
+/* The mid-frame holds the options menu and the system info readouts. */
+#mid-frame {
+	display: flex;
+}
+
+/* The left-frame holds the options and terminate message. */
+#left-frame {
+	width: 100%;
+	float: left;
+}
+
+/* Styles for options */
+#options-table {
+	border-collapse: collapse;
+}
+
+.option-number {
+	color: white;
+	padding-right: 0.5em;
+}
+
+.option-name {
+	color: cyan;
+	padding-right: 0.5em;
+}
+
+.option-description {
+	color: limegreen;
+}
+
+#terminate-message {
+	text-align: center;
+	vertical-align: center;
+	color: limegreen;
+}
+
+/* The right-frame holds the system readouts. */
+#right-frame {
+	width: 17em;
+}
+
+/* Styles for info readouts */
+#info-table {
+	border-collapse: collapse;
+}
+
+.info-string {
+	color: limegreen;
+}
+
+.info-string-blue {
+	color: cyan;
+}
+
+.info-value {
+	color: cyan;
+}
+
+/* The lower-frame holds the option input. */
+#lower-frame {
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	bottom: 2em;
+	width: 100%;
+}
+
+#prompt-label {
+	color: limegreen;
+	text-align: right;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 14pt;
+	float: left;
+	width: 6em;
+	padding-right: 0.75em;
+}
+
+#prompt-line {
+	position: static;
+	background-color: cyan;
+	width: calc(120vh - 6.75em);
+	height: 0.1em;
+	float: right;
+	margin-top: 0.85em;
+}
+
+#command-input {
+	background-color: black;
+	color: cyan;
+	font: inherit;
+
+	position: static;
+	width: calc(120vh - 6.75em);
+	float: right;
+	border-color: cyan;
+	border-width: 0;
+	border-bottom-width: 0.1em;
+}

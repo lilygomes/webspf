@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WEB/SPF</title>
+	<link rel="stylesheet" href="../css/index.css">
+	<script src="../js/index.js"></script>
+	<!-- Enable responsiveness on mobile devices-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+</head>
+<body>
+<div id="outer-frame">
+	<div id="subframe">>
+		<div id="menu-bar">
+			<div class="menu-bar-item" id="menu-button"><u>M</u>enu</div>
+			<div class="menu-bar-item" id="utilities-button"><u>U</u>tilities</div>
+			<div class="menu-bar-item" id="compilers-button"><u>C</u>ompilers</div>
+			<div class="menu-bar-item" id="options-button"><u>O</u>ptions</div>
+			<div class="menu-bar-item" id="status-button"><u>S</u>tatus</div>
+			<div class="menu-bar-item" id="help-button"><u>H</u>elp</div>
+		</div>
+		<div id="menu-bar-separator"></div>
+		<div id="banner-text">
+			<div id="menu-name-banner">WEB/SPF Primary Option Menu
+				<p id="invalid-option"></p>
+			</div>
+		</div>
+		<div id="mid-frame">
+			<div id="left-frame">
+				<table id="options-table">
+					<tr class="option">
+						<td class="option-number"><a href="about.html">0 </a></td>
+						<td class="option-name"><a href="about.html">About</a></td>
+						<td class="option-description">Who's behind this mess</td>
+					</tr>
+					<!--
+					<tr class="option">
+						<td class="option-number">1 </td>
+						<td class="option-name">View</td>
+						<td class="option-description">Display source data or listings</td>
+					</tr>
+					<tr class="option">
+						<td class="option-number">2 </td>
+						<td class="option-name">Edit</td>
+						<td class="option-description">Create or change source data</td>
+					</tr>
+					<tr class="option">
+						<td class="option-number">3 </td>
+						<td class="option-name">Utilities</td>
+						<td class="option-description">Perform utility functions</td>
+					</tr>
+					<tr class="option">
+						<td class="option-number">4 </td>
+						<td class="option-name">Foreground</td>
+						<td class="option-description">Interactive language processing</td>
+					</tr>
+					<tr class="option">
+						<td class="option-number">5 </td>
+						<td class="option-name">Batch</td>
+						<td class="option-description">Submit job for language processing</td>
+					</tr>
+					<tr class="option">
+						<td class="option-number">6 </td>
+						<td class="option-name">Command</td>
+						<td class="option-description">Enter TSO of Workstation commands</td>
+					</tr>
+					<tr class="option">
+						<td class="option-number">7 </td>
+						<td class="option-name">Dialog Test</td>
+						<td class="option-description">Perform dialog testing</td>
+					</tr>
+					<tr class="option">
+						<td class="option-number">9 </td>
+						<td class="option-name">IBM Products</td>
+						<td class="option-description">IBM program development products</td>
+					</tr>
+					<tr class="option">
+						<td class="option-number">10</td>
+						<td class="option-name">SCLM</td>
+						<td class="option-description">SW Configuration Library Manager</td>
+					</tr>
+					<tr class="option">
+						<td class="option-number">11</td>
+						<td class="option-name">Workplace</td>
+						<td class="option-description">ISPF Object/Action Workplace</td>
+					</tr>
+					<tr class="option">
+						<td class="option-number">DB</td>
+						<td class="option-name">DB2</td>
+						<td class="option-description">DB2 Database options menu</td>
+					</tr>
+					<tr class="option">
+						<td class="option-number">H </td>
+						<td class="option-name">HCD</td>
+						<td class="option-description">Hardware Configuration Dialogs</td>
+					</tr>
+					<tr class="option">
+						<td class="option-number">I </td>
+						<td class="option-name">ISMF</td>
+						<td class="option-description">Integrated Storage Management Facility</td>
+					</tr>
+					<tr class="option">
+						<td class="option-number">O </td>
+						<td class="option-name">OMVS</td>
+						<td class="option-description">MVS OpenEdition</td>
+					</tr>
+					<tr class="option">
+						<td class="option-number">R </td>
+						<td class="option-name">RACF</td>
+						<td class="option-description">Resource Access Control Facility</td>
+					</tr>
+					-->
+					<tr class="option">
+						<td class="option-number" onclick="createCat()">C </td>
+						<td class="option-name" onclick="createCat()">Cat</td>
+						<td class="option-description">Meow meow meow</td>
+					</tr>
+					<!--
+					<tr class="option">
+						<td class="option-number">W </td>
+						<td class="option-name">WLM</td>
+						<td class="option-description">Workload Manager</td>
+					</tr>
+					<tr class="option">
+						<td class="option-number">SA</td>
+						<td class="option-name">SA/390</td>
+						<td class="option-description">System Automation Admin</td>
+					</tr>
+					<tr class="option">
+						<td class="option-number">IO</td>
+						<td class="option-name">IO/390</td>
+						<td class="option-description">System Automation I/O Connect</td>
+					</tr>
+					-->
+					<tr class="option">
+						<td class="option-number"><a href="https://github.com/lilygomes/">M </a></td>
+						<td class="option-name"><a href="https://github.com/lilygomes/">More</a></td>
+						<td class="option-description"><a class="blue">Additional Lily Projects</a></td>
+					</tr>
+				</table>
+				<p id="terminate-message">
+					Enter <a class="blue" href="logged-out.html">X</a> to Terminate using log/list defaults
+				</p>
+			</div>
+			<div id="right-frame">
+				<table id="info-table">
+					<tr class="info">
+						<td class="info-string">User ID . :</td>
+						<td class="info-value">IBMUSER</td>
+					</tr>
+					<tr class="info">
+						<td class="info-string">Time. . . :</td>
+						<td class="info-value" id="info-clock">00:00</td>
+						<script>updateTime()</script>
+					</tr>
+					<tr class="info">
+						<td class="info-string">Terminal. :</td>
+						<td class="info-value">3278</td>
+					</tr>
+					<tr class="info">
+						<td class="info-string">Cats. . . :</td>
+						<td class="info-value" id="cat-counter">0</td>
+					</tr>
+					<tr class="info">
+						<td class="info-string">Language. :</td>
+						<td class="info-value">ENGLISH</td>
+					</tr>
+					<tr class="info">
+						<td class="info-string">Appl ID . :</td>
+						<td class="info-value">ISR</td>
+					</tr>
+					<tr class="info">
+						<td class="info-string">TSO logon :</td>
+						<td class="info-value">ISPFPROC</td>
+					</tr>
+					<tr class="info">
+						<td class="info-string">TSO prefix:</td>
+						<td class="info-value"></td>
+					</tr>
+					<tr class="info">
+						<td class="info-string-blue">System ID :</td>
+						<td class="info-value">LIKY</td>
+					</tr>
+					<tr class="info">
+						<td class="info-string-blue">MVS acct. :</td>
+						<td class="info-value">LOLNOPE</td>
+					</tr>
+					<tr class="info">
+						<td class="info-string-blue">Release . :</td>
+						<td class="info-value">WEB/SPF 0.99</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="lower-frame">
+			<div id="prompt-label">Option ===> </div>
+			<form id="command-form" action="javascript:parseCommand()">
+				<input type="text" id="command-input" name="input">
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+/* command-frame is for the command line on other pages */
+#command-frame {
+	display: flex;
+	flex-direction: row;
+}
+
+.page-contents {
+	display: flex;
+	flex-direction: row;
+}
+
+.left-content {
+	width: 40%;
+	padding-right: 1em;
+}
+
+#left-single-picture {
+	width: calc(100% - 2em);
+	padding: 1em;
+	margin-top: 1em;
+}
+
+.right-content {
+	width: 60%;
+}
+
+/* Styles for logoff page */
+#logoff-message {
+	padding-left: 0.4em;
+}
+
+#prompt-label-command {
+	color: limegreen;
+	text-align: right;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 14pt;
+	float: left;
+	width: 8em;
+	padding-right: 0.75em;
+}
+
+#command-input {
+	width: calc(120vh - 8em);
+}
