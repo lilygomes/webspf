@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>About</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/page_style.css">
+	<script src="js/index.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+</head>
+<body>
+<div id="outer-frame">
+	<div id="subframe">>
+		<div id="menu-bar">
+			<div class="menu-bar-item" id="menu-button"><u>M</u>enu</div>
+			<div class="menu-bar-item" id="utilities-button"><u>U</u>tilities</div>
+			<div class="menu-bar-item" id="compilers-button"><u>C</u>ompilers</div>
+			<div class="menu-bar-item" id="options-button"><u>O</u>ptions</div>
+			<div class="menu-bar-item" id="status-button"><u>S</u>tatus</div>
+			<div class="menu-bar-item" id="help-button"><u>H</u>elp</div>
+		</div>
+		<div id="menu-bar-separator"></div>
+		<div id="menu-name-banner">Projects Panel
+			<p id="invalid-option"></p>
+		</div>
+		<div id="command-frame">
+			<div id="prompt-label-command">Command ===> </div>
+			<form id="command-form" action="javascript:parseCommand()">
+				<input type="text" id="command-input" name="input">
+			</form>
+		</div>
+		<div id="mid-frame">
+			<div id="left-frame">
+				<table id="options-table">
+					<tr class="option">
+						<td class="option-number"><a href="projects/1-keyboards.html">1 </a></td>
+						<td class="option-name"><a href="projects/1-keyboards.html">Keyboards</a></td>
+						<td class="option-description">Clickety clack clack</td>
+					</tr>
+					<tr class="option">
+						<td class="option-number"><a href="projects/2-android.html">2 </a></td>
+						<td class="option-name"><a href="projects/2-android.html">Android</a></td>
+						<td class="option-description">Reworking Android at its core</td>
+					</tr>
+					<tr class="option">
+						<td class="option-number"><a href="projects/3-3dprinting.html">3 </a></td>
+						<td class="option-name"><a href="projects/3-3dprinting.html">3D Printing</a></td>
+						<td class="option-description">Turning ideas into plastic</td>
+					</tr>
+					<tr class="option">
+						<td class="option-number"><a></a></td>
+						<td class="option-name"><a></a></td>
+						<td class="option-description"><a class="darkblue">Work in Progress - more options coming soon™</a></td>
+					</tr>
+				</table>
+				<p id="terminate-message">
+					Enter <a class="blue" href="logged-out.html">X</a> to Terminate using log/list defaults
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

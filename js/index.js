@@ -30,6 +30,8 @@ let cats = 0;
 
 function createCat() {
     cats += 1;
+    if (cats === 69)
+        window.location = "cat-overload.html";
     document.getElementById("cat-counter").innerText = cats;
 }
 
