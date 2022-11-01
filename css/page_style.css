@@ -2,6 +2,7 @@
 #command-frame {
 	display: flex;
 	flex-direction: row;
+	padding-bottom: 1em;
 }
 
 .page-contents {

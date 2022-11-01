@@ -43,6 +43,12 @@ function parseCommand() {
             case "0":
                 window.location = "about.html";
                 break;
+            case "1":
+                window.location = "projects.html";
+                break;
+            case "11":
+                window.location = "1-keyboards.html";
+                break;
             case "c":
                 createCat();
                 break;
