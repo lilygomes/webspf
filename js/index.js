@@ -47,7 +47,7 @@ function parseCommand() {
                 window.location = "projects.html";
                 break;
             case "11":
-                window.location = "1-keyboards.html";
+                window.location = "projects/1-keyboards.html";
                 break;
             case "c":
                 createCat();
@@ -55,11 +55,36 @@ function parseCommand() {
             case "m":
                 window.location = "https://github.com/lilygomes/";
                 break;
+            case "x":
             case "exit":
                 window.location = "logged-out.html";
                 break;
-            case "x":
-                window.location = "logged-out.html";
+            default:
+                document.getElementById("invalid-option").innerText = "Invalid option";
+                break;
+        }
+    } else if (document.getElementsByTagName("title")[0].innerText === "Projects") {
+        switch (input.toLowerCase()) {
+            case "1":
+                window.location = "projects/1-keyboards.html";
+                break;
+            case "2":
+                window.location = "projects/2-android.html"
+                break;
+            case "3":
+                window.location = "projects/3-3dprinting.html"
+                break;
+            case "exit":
+                window.location = "index.html"
+                break;
+            default:
+                document.getElementById("invalid-option").innerText = "Invalid option";
+                break;
+        }
+    } else if (document.getElementsByTagName("page-type")[0].innerText === "Project") {
+        switch (input.toLowerCase()) {
+            case "exit":
+                window.location = "../projects.html";
                 break;
             default:
                 document.getElementById("invalid-option").innerText = "Invalid option";
